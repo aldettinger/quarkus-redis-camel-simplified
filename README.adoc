@@ -1,0 +1,13 @@
+= Quarkus Redisson Simplified Reproducer for issues faced while working on the Native Support for Camel Quarkus Redis Extension
+
+This project should reproduce various issues observed while working on the camel-quarkus-redis native support.
+It's base on mvn 3.8.1, openjdk 11.0.11 and GraalVM native-image 21.2.0.
+
+Note that some issues may have been temporarily worked around in the last commits of the given branch:
+https://github.com/aldettinger/camel-quarkus/tree/CAMEL-QUARKUS-2107-no-redisson-quarkus
+
+== How to reproduce
+
+Simply run `mvn clean integration-test -P native`.
+The test runs fine in JVM mode while the static analysis fails in native mode.
+
