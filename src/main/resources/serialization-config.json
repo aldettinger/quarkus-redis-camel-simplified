@@ -1,0 +1,6 @@
+[
+  {
+    "name":"org.apache.camel.support.DefaultExchangeHolder",
+    "customTargetConstructorClass":"java.lang.Object"
+  }
+]
